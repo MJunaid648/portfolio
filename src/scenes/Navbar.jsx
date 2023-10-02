@@ -7,7 +7,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
     <AnchorLink
       className={`${selectedPage === lowerCasePage ? "text-yellow " : ""}
       hover:text-yellow transition duration-500`}
-      href={`${lowerCasePage}`}
+      href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
       {page}

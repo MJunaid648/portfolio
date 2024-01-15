@@ -60,8 +60,8 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start  ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos culpa,
-            a numquam repellendus earum odit.
+            MERN Stack Developer. My skill set speaks for itself. You will not
+            be disappointed!
           </p>
         </motion.div>
 
@@ -77,14 +77,12 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <AnchorLink
+          <div
             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
              hover:bg-blue hover:text-white transition duration-500"
-            onClick={() => setSelectedPage("contact")}
-            href="#contact"
           >
-            Contact Me
-          </AnchorLink>
+            Interested?
+          </div>
           <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5 "
             onClick={() => setSelectedPage("contact")}
@@ -110,7 +108,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <SocialMediaIcons/>
+          <SocialMediaIcons />
         </motion.div>
       </div>
     </section>

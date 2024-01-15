@@ -26,7 +26,7 @@ const projectsData = [
   {
     id: 3,
     title: "Todo-List",
-    desc: "A responsive web app built with React that lets you create a list of your daily todos.",
+    desc: "A responsive todo list react app.",
     imgSrc: "../assets/todo-list.png",
     liveDemoLink: "https://junaids-todo-list.netlify.app/",
   },
@@ -68,10 +68,7 @@ const Project = ({ title, desc, imgSrc, liveDemoLink }) => {
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue cursor-pointer`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
   return (
-    <motion.div
-      variants={projectVariant}
-      className="relative flex border-2 border-black"
-    >
+    <motion.div variants={projectVariant} className="relative flex flex-1">
       <a href={liveDemoLink}>
         <div className={`${overlayStyles}`}>
           <p className="text-2xl font-playfair">{title}</p>

@@ -26,7 +26,7 @@ const Testimonials = () => {
       {/* TESTIMONIALS */}
       <div className="md:flex md:justify-between gap-8">
         <motion.div
-          className="mx-auto relative bg-blue max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
+          className="mx-auto relative bg-blue max-w-[400px] h-[460px] flex flex-col justify-end p-16 mt-48
             before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person1"
           initial="hidden"
           whileInView="visible"
@@ -39,12 +39,18 @@ const Testimonials = () => {
         >
           <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea.
+            Junaid has proved to be an extra-ordinary part of our team. His best
+            characteristic is that he is always willing to go an extra mile and
+            work proactively. In our Team he worked on full-stack MERN and
+            Wordpress.
           </p>
+          <p className="self-end text-xl text-[#010026] font-bold">Khurram Sajjad</p>
+          <p className="self-end text-[#010026]">CEO Adroit Tech</p>
+
         </motion.div>
 
         <motion.div
-          className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
+          className="mx-auto relative bg-red max-w-[400px] h-[460px] flex flex-col justify-end p-16 mt-48
             before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person2"
           initial="hidden"
           whileInView="visible"
@@ -57,13 +63,15 @@ const Testimonials = () => {
         >
           <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            Aliquam aliquet integer ut fames odio in at. At magna ornare dictum
-            lectus.
+            He is very quick at understanding project requirements. Knows his way
+            around web development very well, and is passionate about learning
+            new skills that can help him grow.
           </p>
+          <p className="self-end">Khadeeja Rouf</p>
         </motion.div>
 
         <motion.div
-          className="mx-auto relative bg-yellow max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
+          className="mx-auto relative bg-yellow max-w-[400px] h-[460px] flex flex-col justify-end p-16 mt-48
             before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person3"
           initial="hidden"
           whileInView="visible"
@@ -76,7 +84,9 @@ const Testimonials = () => {
         >
           <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            Fames odio in at. At magna ornare dictum lectus.
+            Very quick at understanding project requirements. Knows his way
+            around web development very well, and is passionate about learning
+            new skills that can help him grow.
           </p>
         </motion.div>
       </div>

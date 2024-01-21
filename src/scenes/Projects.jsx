@@ -1,5 +1,6 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
+import ProjectTile from "../components/ProjectTile";
 const container = {
   hidden: {},
   visible: {
@@ -18,17 +19,17 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Expense-Tracker-App",
-    desc: "A responsive web app built with React to track you daily, monthly and yearly expenses.",
-    imgSrc: "../assets/expense-tracker-app.png",
-    liveDemoLink: "https://expense-tracker648.netlify.app/",
+    title: "Foodie, A food recipe app",
+    desc: "A responsive recipe app built with React.",
+    imgSrc: "../assets/Foodie.png",
+    liveDemoLink: "https://foodie648.netlify.app/",
   },
   {
     id: 3,
-    title: "Todo-List",
-    desc: "A responsive todo list react app.",
-    imgSrc: "../assets/todo-list.png",
-    liveDemoLink: "https://junaids-todo-list.netlify.app/",
+    title: "Buzz Bazaar",
+    desc: "A mobile responsive ecommerce shopping store created with react redux toolkit",
+    imgSrc: "../assets/store-img-2.png",
+    liveDemoLink: "https://buzz-bazaar.netlify.app/",
   },
   {
     id: 4,
@@ -51,34 +52,15 @@ const projectsData = [
     imgSrc: "../assets/food-order-landing-page.png",
     liveDemoLink: "https://junaid-food-order-app.netlify.app/",
   },
+
   {
     id: 7,
-    title: "React-Image-Slider",
-    desc: "A responsive Image Slider created using React.js",
-    imgSrc: "../assets/react-image-slider.png",
-    liveDemoLink: "https://junaid-react-slider.netlify.app/",
+    title: "Todo-List",
+    desc: "A responsive todo list react app.",
+    imgSrc: "../assets/todo-list.png",
+    liveDemoLink: "https://junaids-todo-list.netlify.app/",
   },
 ];
-const projectVariant = {
-  hidden: { opacity: 0, scale: 0.8 },
-  visible: { opacity: 1, scale: 1 },
-};
-const Project = ({ title, desc, imgSrc, liveDemoLink }) => {
-  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue cursor-pointer`;
-  const projectTitle = title.split(" ").join("-").toLowerCase();
-  return (
-    <motion.div variants={projectVariant} className="relative flex flex-1">
-      <a href={liveDemoLink}>
-        <div className={`${overlayStyles}`}>
-          <p className="text-2xl font-playfair">{title}</p>
-          <p className="mt-7">{desc}</p>
-        </div>
-      </a>
-      <img src={imgSrc} alt={projectTitle} className="object-cover" />
-    </motion.div>
-  );
-};
 
 const Projects = () => {
   return (
@@ -117,13 +99,13 @@ const Projects = () => {
           {/* ROW 1 */}
           <div
             className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
+              max-w-[400px] max-h-[400px] m-3 text-2xl font-playfair font-semibold"
           >
             BEAUTIFUL USER INTERFACES
           </div>
           {projectsData.map((project) => {
             return (
-              <Project
+              <ProjectTile
                 id={project.id}
                 title={project.title}
                 desc={project.desc}
@@ -133,7 +115,7 @@ const Projects = () => {
             );
           })}
           <div
-            className="flex justify-center text-center items-center p-10 bg-blue
+            className="flex justify-center text-center items-center m-3 p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
             SMOOTH USER EXPERIENCE

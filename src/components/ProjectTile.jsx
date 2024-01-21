@@ -11,7 +11,7 @@ const ProjectTile = ({ title, desc, imgSrc, liveDemoLink }) => {
   return (
     <motion.div
       variants={projectVariant}
-      className="relative flex flex-1 m-3 border-red border-2 overflow-hidden min-h-52 "
+      className="relative flex flex-1 m-3 overflow-hidden min-h-52 "
     >
       <a href={liveDemoLink}>
         <div className={`${overlayStyles}`}>

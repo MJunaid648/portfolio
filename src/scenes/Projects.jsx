@@ -106,7 +106,7 @@ const Projects = () => {
           {projectsData.map((project) => {
             return (
               <ProjectTile
-                id={project.id}
+                key={project.id}
                 title={project.title}
                 desc={project.desc}
                 imgSrc={project.imgSrc}

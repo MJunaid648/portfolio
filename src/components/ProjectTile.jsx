@@ -13,7 +13,7 @@ const ProjectTile = ({ title, desc, imgSrc, liveDemoLink }) => {
       variants={projectVariant}
       className="relative flex flex-1 m-3 overflow-hidden min-h-52 "
     >
-      <a href={liveDemoLink} target="_blank" >
+      <a href={liveDemoLink} target="_blank" rel="noreferrer" >
         <div className={`${overlayStyles}`}>
           <p className="text-2xl font-playfair font-bold">{title}</p>
           <p className="mt-2">{desc}</p>

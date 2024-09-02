@@ -13,17 +13,19 @@ const ProjectTile = ({ title, desc, imgSrc, liveDemoLink }) => {
       variants={projectVariant}
       className="relative flex flex-1 m-3 overflow-hidden min-h-52 "
     >
-      <a href={liveDemoLink}>
+      <a href={liveDemoLink} target="_blank" >
         <div className={`${overlayStyles}`}>
-          <p className="text-2xl font-playfair">{title}</p>
+          <p className="text-2xl font-playfair font-bold">{title}</p>
           <p className="mt-2">{desc}</p>
         </div>
       </a>
-      <img
-        src={imgSrc}
-        alt={projectTitle}
-        className="object-contain bg-white/40 "
-      />
+      <div className="flex-1 flex items-center justify-center">
+        <img
+          src={imgSrc}
+          alt={projectTitle}
+          className="object-cover bg-white/40 "
+        />
+      </div>
     </motion.div>
   );
 };

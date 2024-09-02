@@ -45,12 +45,19 @@ const projectsData = [
     imgSrc: "../assets/recipe-landing-page.png",
     liveDemoLink: "https://juni-recipes.netlify.app/",
   },
+  // {
+  //   id: 6,
+  //   title: "Food Order",
+  //   desc: "A React.js food order landing page",
+  //   imgSrc: "../assets/food-order-landing-page.png",
+  //   liveDemoLink: "https://junaid-food-order-app.netlify.app/",
+  // },
   {
     id: 6,
     title: "Food Order",
-    desc: "A React.js food order landing page",
-    imgSrc: "../assets/food-order-landing-page.png",
-    liveDemoLink: "https://junaid-food-order-app.netlify.app/",
+    desc: "React.js + TailwindCSS Landing Page",
+    imgSrc: "../assets/nike-landing-page.png",
+    liveDemoLink: "https://nike-ui-648.netlify.app/",
   },
 
   {

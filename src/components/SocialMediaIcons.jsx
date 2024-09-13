@@ -3,7 +3,7 @@ const SocialMediaIcons = () => {
     <div className="flex justify-center md:justify-start gap-7 my-5">
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.linkedin.com/in/full-stack-web-developer-junaid/"
+        href="https://www.linkedin.com/in/junaid-full-stack-developer"
         target="_blank"
         rel="noreferrer"
       >
